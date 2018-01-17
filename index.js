@@ -43,6 +43,8 @@ request(url, function (err, res, body) {
     console.log(obj)
 });
 
+require('./routes/linkRoute')(app);
+
 app.listen(port, function () {
     console.log('app listening on port' + port);
 })
